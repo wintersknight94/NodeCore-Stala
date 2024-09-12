@@ -32,7 +32,7 @@ local schematic_ReactiveStalactite = {
         N, G, G, G, N,
         N, N, G, N, N,
 
-        _, _, N, _, _,   -- ypos 0, prob 25% (64/256)
+        _, _, G, _, _,   -- ypos 0, prob 25% (64/256)
         _, _, G, _, _,   -- ypos 1, prob 37% (96/256)
         _, _, G, _, _,   -- ypos 2, prob 100%
         _, _, G, _, _,   -- ypos 3, prob 100%
@@ -83,7 +83,7 @@ minetest.register_decoration({
     deco_type = "schematic",
     place_on = "group:stone",
     sidelen = 144,
-    fill_ratio = 0.0003,
+    fill_ratio = 0.00001,
 --    biomes = {"deep"},
     y_max = -256,
     y_min = -31000,
@@ -222,7 +222,7 @@ minetest.register_decoration({
     deco_type = "schematic",
     place_on = "group:stone",
     sidelen = 80,
-    fill_ratio = 0.0003,
+    fill_ratio = 0.001,
 --    biomes = {"deep"},
     y_max = -256,
     y_min = -31000,

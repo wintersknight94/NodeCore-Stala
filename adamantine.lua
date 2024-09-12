@@ -1,6 +1,6 @@
 local _  = {name = "air",                     prob = 0}
 local A  = {name = "air",                     prob = 255, force_place = true}
-local D  = {name = "wc_adamant:block",        prob = 255, force_place = true}
+local D  = {name = "wc_crystals:adamant",        prob = 255, force_place = true}
 
 local schematic_GreaterAdamantineStalactite = {
     size = {x = 3, y = 23, z = 3},
@@ -128,16 +128,16 @@ for i, node in ipairs(schematic_GreaterAdamantineStalactite.yslice_prob) do
 end
 
 minetest.register_decoration({
-    name = "Towering Adamantine Stalagmite",
+    name = "Pure Adamantine Stalagmite",
     deco_type = "schematic",
     place_on = "group:stone",
     sidelen = 80,
-    fill_ratio = 0.001,
+    fill_ratio = 0.00001,
 --    biomes = {"deep"},
-    y_max = -800,
+    y_max = -1000,
     y_min = -31000,
     schematic = schematic_ToweringAdamantineStalagmite,
     replacements = {},
     flags = "place_center_x,place_center_z,force_placement,all_floors",
-    place_offset_y=-2
+    place_offset_y = -2
 })
